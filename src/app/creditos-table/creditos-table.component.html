@@ -1,0 +1,22 @@
+
+<h2>Creditos</h2>
+<table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Modulo</th>
+        <th scope="col">Creditos</th>
+        <th scope="col">Teoria</th>
+        <th scope="col">Laborario</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let credito of _creditos">
+        <th scope="row">1</th>
+        <td>{{credito.modulo}}</td>
+        <td>{{credito.creditos}}</td>
+        <td>{{credito.teoria}}</td>
+        <td>{{credito.laboratorio}}</td>
+      </tr>
+    </tbody>
+  </table>

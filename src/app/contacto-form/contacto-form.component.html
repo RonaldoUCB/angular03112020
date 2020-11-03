@@ -1,0 +1,20 @@
+<form (ngSubmit)="processForm()" id="cover">
+    <div class="form-group">
+      <label for="nombre">Nombre</label>
+      <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese Nombre" [(ngModel)]="nombre">
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" class="form-control" id="email" name="email" placeholder="Ingrese Email" [(ngModel)]="email">
+    </div>
+    <div class="form-group">
+        <label for="telefono">Telefono</label>
+        <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Ingrese Telefono" [(ngModel)]="telefono">
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje</label>
+        <input type="text" class="form-control" id="mensaje" name="mensaje" placeholder="Ingrese Mensaje" [(ngModel)]="mensaje">
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+

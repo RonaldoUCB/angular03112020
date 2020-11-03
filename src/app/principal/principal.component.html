@@ -1,0 +1,25 @@
+
+<div class="jumbotron">
+    <h1 class="display-10">Bienvenido al curso de Technologias Web!</h1>
+    <p class="lead">Esta pagina presenta algunos de los datos importnates sobre nuestro curso de tecnologias web.</p>
+    <hr class="my-4">
+    <p>Si desea conocer mas redirigase al siguiente link.</p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Leer Mas</a>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Que te ofrece este curso?</h1>
+      <p class="lead">El curso de tecnologias web te ofrece un conjunto de temas seccionados en modulos que te permitiran conocer a detalle las technologias y conceptos appplicados en tecnologias web.</p>
+    </div>
+</div>
+
+  <ul class="list-unstyled">
+    <li class="media my-4" *ngFor="let modulo of _modulos">
+      <img class="mr-3" src="../{{modulo.imagen}}" alt="Generic placeholder image" width="100" height="100">
+      <div class="media-body">
+        <h5 class="mt-0 mb-1">{{modulo.modulo}}</h5>
+        {{modulo.descripcion}}
+      </div>
+    </li>
+  </ul>

@@ -1,0 +1,20 @@
+
+<h2>Tiempos</h2>
+<table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Actividad</th>
+        <th scope="col">Inicio</th>
+        <th scope="col">Final</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tiempo of _tiempos">
+        <th scope="row">1</th>
+        <td>{{tiempo.actividad}}</td>
+        <td>{{tiempo.inicio}}</td>
+        <td>{{tiempo.final}}</td>
+      </tr>
+    </tbody>
+  </table>
