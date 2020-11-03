@@ -11,7 +11,7 @@
     </thead>
     <tbody>
       <tr *ngFor="let tiempo of _tiempos">
-        <th scope="row">1</th>
+        <th scope="row">{{_tiempos.indexOf(tiempo)+1}}</th>
         <td>{{tiempo.actividad}}</td>
         <td>{{tiempo.inicio}}</td>
         <td>{{tiempo.final}}</td>

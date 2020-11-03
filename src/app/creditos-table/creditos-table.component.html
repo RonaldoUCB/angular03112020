@@ -12,7 +12,7 @@
     </thead>
     <tbody>
       <tr *ngFor="let credito of _creditos">
-        <th scope="row">1</th>
+        <th scope="row">{{_creditos.indexOf(credito)+1}}</th>
         <td>{{credito.modulo}}</td>
         <td>{{credito.creditos}}</td>
         <td>{{credito.teoria}}</td>
